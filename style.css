@@ -408,3 +408,7 @@ background: transparent;
         max-width: 90%;
     }
 }
+footer{
+    height: 2vw;
+    visibility: hidden;
+}
