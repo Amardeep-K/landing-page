@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600/800");
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-image: linear-gradient(rgba(1, 1, 23, 0.859), rgba(1, 1, 21, 0.914)), url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-position: center;
+    animation: fade-in 1s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+nav {
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8vw;
+    font-weight: 700;
+    padding: 0.9vw 6.5vw;
+    border-bottom: 0.3px solid white;
+}
+
+.content {
+
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.main-content {
+    background-color: black;
+    background-image: url(op.jpg);
+    background-size: 69vw;
+    background-repeat: no-repeat;
+    border: 1px solid #0759f0;
+    height: 33vw;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 63px 111px -45px #0759f0;
+    display: flex;
+    animation: slide-in 1s ease-in-out;
+    margin-top: 5vw;
+ }
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.main-content button {
+    cursor: pointer;
+    padding: 1.3vw 2.3vw;
+    margin-left: 5vw;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #0759f0;
+    background-color: transparent;
+    font-size: 1.5vw;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.main-content button:hover {
+    background-color: #0759f0;
+}
+
+.main-content h2 {
+    width: 33vw;
+    font-size: 2.567vw;
+    padding: 4vw 5vw;
+    color: white;
+}
+
+.main-content h2 span {
+    background: linear-gradient(270deg, #00ffa7 0%, #004cff 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.navlinks {
+    padding: 2vw 1.5vw;
+    display: flex;
+    align-items: center;
+    gap: 7vw;
+}
+
+nav button {
+   border: 1px solid #0759f0;
+    border-radius: 5px;
+    padding: 1vw 1.5vw;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav button:hover {
+    background-color: #0759f0;
+}
+
+.logo {
+    height: 4vw;
+}
+
+.navlinks a {
+    font-size: 1vw;
+    color: white;
+    text-decoration:none;
+    transition: color 0.3s ease-in-out;
+}
+
+.navlinks a:hover {
+    color: #0759f0;
+}
+
+nav i {
+    display: none;
+    color: white;
+    font-weight: 700;
+}
+
+.about {
+    border: 1px solid #0759f0;
+    height: 28vw;
+    width: 80%;
+    background-color:black ;
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
+    box-shadow: 0px 63px 111px -45px #0759f0;
+    animation: slide-in 1s ease-in-out;
+    margin-top: 5vw;
+
+  
+}
+.about img{
+height: 26.5vw;
+}
+.about h2 {
+    width: 33vw;
+font-size: 2.567vw;
+padding: 1vw 5vw;
+    color: white;
+}
+
+.about p {
+    width: 35vw;
+    font-size: 1.2vw;
+    padding: 4vw 5vw;
+    color: white;
+}
+
+
+.features {
+    border: 1px solid #0759f0;
+    height: 15vw;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0px 63px 111px -45px #0759f0;
+    animation: slide-in 1s ease-in-out;
+    margin-top: 5vw;
+  
+
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    text-align: center;
+    
+}
+
+.feature h3 {
+    font-size: 2vw;
+    color: white;
+    background: linear-gradient(270deg, #00ffa7 0%, #004cff 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    
+}
+
+.feature p {
+    font-size: 0.9vw;
+    color: white;
+    font-weight:lighter;
+    line-height: 2;
+    max-width: 90%;
+}
+.hamburger {
+   border: none;
+   display: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.hamburger i {
+    font-size: 24px;
+    color: white; /* Adjust color as needed */
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.503);
+    z-index: 1000;
+    display: none;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    max-width: 300px;
+    height: 100%;
+    padding: 20px;
+    z-index: 1001;
+    transform: translateX(100%);
+    transition: transform 1s step-end;
+    border:2px solid  #0759f0;
+    border-radius: 5px;
+    backdrop-filter: blur(7px);
+}
+
+.menu.active {
+    transition:ease-in all 1s;
+    transform: translateX(0);
+}
+
+.menu-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-close {
+    font-size: 6vw;
+    border: none;
+    color: #0759f0;
+background: transparent;
+    cursor: pointer;
+ }
+
+
+.menu a {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 4vw;
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: #0759f0;
+}
+
+@media (max-width: 550px) {
+    nav {
+        height:60px;
+        font-size: 3vw;
+    }
+    .logo{
+        height: 40px;
+    }
+    nav button{
+        padding: 1.3vw 2vw;
+        font-size: 10px;
+    }
+    nav .logo{
+        display: none;
+    }
+
+    .navlinks {
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    nav i {
+        display: block;
+        font-size: 22px;
+    }
+    .content{
+        height: 100vh;
+        
+        background: transparent;
+        display: flex;
+        justify-content: space-evenly;
+        
+
+    }
+
+    .main-content
+    { background-color: black;
+        background-size: 98vw;
+        height: 60vw;
+        width: 95%;
+        padding: 0.5vw 2vw;
+        box-shadow: 0px 63px 71px -43px #0759f0;
+    }
+    .main-content h2 {
+        width: 47vw;
+        font-size: 4vw;
+        padding: 4vw 5vw;
+        color: white;
+    }
+    .main-content button{
+        font-size: 3vw;
+        background-color: #004cff;
+
+    }
+    .about{
+        width: 90vw;
+        height: 60vw;
+        padding: 4vw 4vw;
+        overflow: hidden;
+        background-image: url(Untitled\ design.png);
+        background-size: cover;
+    }
+    .about h2{
+        font-size: 5vw;
+        width: 80%;
+
+    }
+    .about p{
+        font-size: 7px;
+        backdrop-filter: blur(1px);
+        
+    }
+    .about img{
+        display: none;
+    }
+    .features{
+        padding: 4vw 4vw;
+        height:50vw;
+        width: 90vw;
+
+    }
+
+    .feature h3 {
+        width: 30vw;
+        font-size: 5vw;
+        color: white;
+        margin-bottom: 10px;
+        background: linear-gradient(270deg, #00ffa7 0%, #004cff 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        
+    }
+    
+    .feature p {
+        font-size: 8px;
+        color: white;
+        font-weight:lighter;
+        line-height:1.8;
+        max-width: 90%;
+    }
+}
