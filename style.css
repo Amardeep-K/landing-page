@@ -374,8 +374,9 @@ background: transparent;
 
     }
     .about p{
-        font-size: 7px;
-        backdrop-filter: blur(1px);
+        font-size: 7.7px;
+        backdrop-filter: blur(4px);
+        border-radius: 5px;
         
     }
     .about img{
